@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Cool Market"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textSize="48sp"
+        android:textColor="@color/green"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Товары лол"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CB1"
+                android:textSize="24sp"
+                android:text="Супчек"/>
+            <CheckBox
+                android:id="@+id/CB2"
+                android:textSize="24sp"
+                android:text="Бананчики"/>
+            <CheckBox
+                android:id="@+id/CB3"
+                android:textSize="24sp"
+                android:text="Фрикассе"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CB4"
+                android:textSize="24sp"
+                android:text="Огузок"/>
+            <CheckBox
+                android:id="@+id/CB5"
+                android:textSize="24sp"
+                android:text="Яйца"/>
+            <CheckBox
+                android:id="@+id/CB6"
+                android:textSize="24sp"
+                android:text="Не ломай мне"/>
+        </GridLayout>
+
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Варианты доставки"
+        android:textColor="@color/purple"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"/>
+    <RadioGroup
+        android:id="@+id/Delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/RB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Доставка курьером"/>
+        <RadioButton
+            android:id="@+id/RB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Самовывоз"/>
+        <RadioButton
+            android:id="@+id/RB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="К столику"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/Addition"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Особые пожелания к братишке"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Order"
+            android:shadowColor="@color/red"
+            android:text="Оформить заказик"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/Clear"
+            android:shadowColor="@color/red"
+            android:text="Ооочистить"
+            android:textColor="@color/red"
+            android:layout_gravity="right"/>
+    </GridLayout>
+</LinearLayout>
